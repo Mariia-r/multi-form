@@ -1,0 +1,121 @@
+.form-row {
+    margin: 20px;
+}
+
+.form-group {
+    position: relative;
+    padding: 0px 5px;
+}
+
+input.form-control,
+select.form-control {
+    padding: 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0;
+}
+
+input.form-control:focus, 
+select.form-control:focus {
+    box-shadow: none;
+}
+
+label {
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+  
+input.form-control:focus ~ label, input.is-valid ~ label,
+select.form-control:focus ~ label, select.is-valid ~ label {
+    top: -15px;
+    font-size: 14px;
+    color: #48a5ea;
+}
+
+input.is-valid ~ label,
+select.is-valid ~ label{
+    color: grey;
+}
+
+.wrapper-btns {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-reset {
+    float: left;
+    border: none;
+    color: lightgrey;
+    background-color: Transparent;
+    height: 40px;
+    width: 80px;
+}
+
+.btn-reset:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    color: black;
+    transition: 0.5s;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.btn-submit, .btn-continue {
+    float: right;
+    background: #48a5ea;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn-submit:hover, .btn-continue:hover {
+    background-color: lightskyblue;
+    transition: 0.5s;
+}
+
+input.form-control.is-valid,
+select.form-control.is-valid {
+    border-bottom: 1px solid lightgrey !important;
+    box-shadow: none !important;
+}
+
+input.form-control.is-invalid,
+select.form-control.is-invalid {
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+input.form-control.is-invalid ~ label,
+select.form-control.is-invalid ~ label {
+    color: red;
+    top: -15px;
+    font-size: 14px;
+}
+
+.invalid-message {
+    color: red;
+    font-size: 10pt;
+}
+
+.form-row > .col, .form-row > [class*="col-"]:first-child {
+    padding-right: 25px !important;
+}
+
+.form-row > .col, .form-row > [class*="col-md-3"]:last-child {
+    padding-left: 25px !important;
+}
+
+.form-row > [class*="col-md-3"]:last-child > select ~ label {
+    padding-left: 20px !important;
+}
+
