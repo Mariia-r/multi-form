@@ -26,7 +26,7 @@ const Optional = (props) => {
                             onClick={(event) => {props.confirmReset(event, reset)}}>
                                 Reset All
                     </button>
-                    <button type="submit" className="btn-continue" disabled={pristine || submitting}>Submit</button>
+                    <button type="submit" className="btn-submit" disabled={pristine || submitting}>Submit</button>
                 </div>
             </form> 
         </>   

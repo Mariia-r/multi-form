@@ -7,7 +7,8 @@ const renderField = ({ input, label, type, meta: { touched, error } }) => (
       <input {...input} type={type} 
              className={`form-control 
                         ${touched && error && "is-invalid"}
-                        ${touched && !error && "is-valid"}`
+                        ${touched && !error && "is-valid"}
+                        ${input.name === "userId" && "field-userId"}`
                         }
       />
       {touched && error && <span className="invalid-message">{error}</span>}
