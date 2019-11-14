@@ -59,7 +59,7 @@ select.is-valid ~ label{
     width: 80px;
 }
 
-.btn-reset:hover {
+.btn-reset:hover, .btn-reset:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
     color: black;
@@ -78,7 +78,8 @@ select.is-valid ~ label{
     height: 40px;
 }
 
-.btn-submit:hover, .btn-continue:hover {
+.btn-submit:hover, .btn-continue:hover,
+.btn-submit:focus, .btn-continue:focus {
     background-color: lightskyblue;
     transition: 0.5s;
 }
@@ -119,3 +120,12 @@ select.form-control.is-invalid ~ label {
     padding-left: 20px !important;
 }
 
+.field-userId {
+    background: url(../../images/lock.png) no-repeat 3px 1px;
+    background-size: auto 50%;
+    background-position: 100%;
+}
+
+legend {
+    font-weight: bold;
+}
